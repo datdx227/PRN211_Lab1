@@ -9,6 +9,22 @@ namespace Assignment1
 {
     public class Player : Person
     {
+        public Player()
+        {
+        }
+
+        public Player(string code, string name, string address, int shirtnumber, string position, int salary) : base(code, name, address, position, salary)
+        {
+            Shirtnumber = shirtnumber;
+        }
+        
+        public int Shirtnumber { get; set; }
+        
+
+        public override string? ToString()
+        {
+            return Code + "\t" + Name + "\t" + Address + "\t" + Shirtnumber + "\t" + Position + "\t" + Salary;
+        }
         //public string code;
         //public string name;
         //public string address;
@@ -17,10 +33,11 @@ namespace Assignment1
 
         // public string position;
         //public int salary;
-
-        public Player()
-        {
-        }
+        //public string Code { get => code; set => code = value; }
+        //public string Name { get => name; set => name = value; }
+        //public string Address { get => address; set => address = value; }
+        //public string Position { get => position; set => position = value; }
+        //public int Salary { get => salary; set => salary = value; }
 
         //public Player(string code, string name, string address, string position, int salary)
         //{
@@ -40,20 +57,5 @@ namespace Assignment1
             Position = position;
             Salary = salary;
         }*/
-        public Player(string code, string name, string address, int shirtnumber, string position, int salary) : base(code, name, address, position, salary)
-        {
-            Shirtnumber = shirtnumber;
-        }
-        //public string Code { get => code; set => code = value; }
-        //public string Name { get => name; set => name = value; }
-        //public string Address { get => address; set => address = value; }
-        public int Shirtnumber { get; set; }
-        //public string Position { get => position; set => position = value; }
-        //public int Salary { get => salary; set => salary = value; }
-
-        public override string? ToString()
-        {
-            return Code + "\t" + Name + "\t" + Address + "\t" + Shirtnumber + "\t" + Position + "\t" + Salary;
-        }
     }
 }

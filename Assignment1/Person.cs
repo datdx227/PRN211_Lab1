@@ -8,11 +8,7 @@ namespace Assignment1
 {
     public class Person
     {
-        //public string code;
-        //public string name;
-        //public string address;
-        //public string position;
-        //public int salary;
+        
         public string Code { get; set; }
         public string Name { get; set; }
         public string Address { get; set; }
@@ -32,6 +28,10 @@ namespace Assignment1
             Salary = salary;
         }
 
-        
+        //public string code;
+        //public string name;
+        //public string address;
+        //public string position;
+        //public int salary;
     }
 }
